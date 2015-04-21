@@ -13,7 +13,11 @@
 */
 
 //your code here
-
+function uselessFunction(){
+	var useless = null;
+	//console.log("useless = " + useless);
+	return useless;
+}
 //end your code
 
 var bar = 'not a function';
@@ -30,7 +34,18 @@ var barType = typeof bar;
 */
 
 //your code here
-
+var successful = true;
+var val;
+bar = function(doubleArray){
+	for (i = 0; i < doubleArray.length; i++){
+		val = doubleArray[i];
+		doubleArray[i] = doubleArray[i] * 2;
+		if ((val * 2) !== doubleArray[i]){
+			successful = false;
+		}
+	}
+	return successful;
+};
 //end your code
 
 /**
@@ -66,5 +81,37 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
+function parseGit(logArray) {
+var hashString, dateObject, dateString, messageString, pos1, pos2, i;
+	for (i = 0; i < logArray.length; i++) {
+		//Extract the hash from the git log
+		pos1 = logArray[i].indexOf(" ");
+		hashString = logArray[i].slice(0, pos1);
+		console.log(pos1);
+		console.log("Hash = " + hashString);
 
+		//Extract the date from the git log
+		pos2 = logArray[i].indexOf('"');
+		dateString = logArray[i].slice(pos1 + 1, pos2);
+		console.log(pos2);
+		console.log('Date = ' + dateString);
+		dateObject = new Date(dateString);
+		console.log(dateObject);
+
+		//Extract the message from the git log
+		messageString = logArray[i].slice(pos2 + 1, logArray[i].length - 1);
+		console.log("Message = " + messageString);
+
+		//Create gitLog objects
+		gitLogs = new Array();
+		gitLogs[i] = (new GitLog(hashString, dateObject, messageString));
+		
+		console.log("the hash of object = " + gitLogs[i].hash);
+		console.log("the date of object = " + gitLogs[i].date);
+		console.log("the message of object = " + gitLogs[i].message);
+	}
+	
+	return gitLogs;
+
+}
 //end your code
