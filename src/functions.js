@@ -36,6 +36,7 @@ var barType = typeof bar;
 //your code here
 var successful = true;
 var val;
+var i;
 bar = function(doubleArray){
 	for (i = 0; i < doubleArray.length; i++){
 		val = doubleArray[i];
@@ -83,6 +84,7 @@ function GitLog(hash, date, message) {
 //your code here
 function parseGit(logArray) {
 var hashString, dateObject, dateString, messageString, pos1, pos2, i;
+	var gitLogs = new Array();
 	for (i = 0; i < logArray.length; i++) {
 		//Extract the hash from the git log
 		pos1 = logArray[i].indexOf(" ");
@@ -103,8 +105,9 @@ var hashString, dateObject, dateString, messageString, pos1, pos2, i;
 		console.log("Message = " + messageString);
 
 		//Create gitLog objects
-		gitLogs = new Array();
-		gitLogs[i] = (new GitLog(hashString, dateObject, messageString));
+		
+		gitLogs.push(new GitLog(hashString, dateObject, messageString) );
+		//gitLogs[i] = (new GitLog(hashString, dateObject, messageString));
 		
 		console.log("the hash of object = " + gitLogs[i].hash);
 		console.log("the date of object = " + gitLogs[i].date);
