@@ -1,0 +1,36 @@
+Start: Sun, 26 Apr 2015 20:15:00 -0500
+End: Sun, 26 Apr 2015 18:30:00 -0500
+Tasks: Worked on completing all requirements
+
+Start: Sun, 26 Apr 2015 16:45:00 -0500
+End: Sun, 26 Apr 2015 14:30:00 -0500
+Tasks: Worked on completing all requirements
+
+Start: Sat, 26 Apr 2015 12:30:00 -0500
+End: Sun, 26 Apr 2015 08:30:00 -0500
+Tasks: Worked on completing all requirements
+
+Start: Sat, 25 Apr 2015 13:00:00 -0500
+End: Sat, 25 Apr 2015 21:30:00 -0500
+Tasks: Began working on pulling Gists from GitHub
+
+Start: Fri, 24 Apr 2015 18:00:00 -0500
+End: Fri, 24 Apr 2015 15:30:00 -0500
+Tasks: Tried to recreate code from example video
+
+Start: Mon, 20 Apr 2015 20:30:00 -0500
+End: Mon, 20 Apr 2015 22:13:41 -0500 
+Tasks: Got all programming of part 1 to pass tests!
+
+Start: Mon, 20 Apr 2015 15:00:00 -0500
+End: Mon, 20 Apr 2015 19:42:11 -0500 
+Tasks: Installed linter-jscs to sublime and worked on objects
+
+Start: Sun, 19 Apr 2015 09:00:00 -0500
+End: Sun, 19 Apr 2015 14:27:26 -0500 
+Tasks: Completed most functions and most objects
+
+Start: Sat, 18 Apr 2015 10:30:00 -0500
+End: Sat, 18 Apr 2015 13:14:38 -0500 
+Tasks: Completed variables and some functions
+
